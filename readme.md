@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://laravel.com/assets/img/components/logo-laravel.svg">
+<img src="logo.png">
 </p>
 
 # About Laravel-CMS
