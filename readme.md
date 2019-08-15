@@ -1,6 +1,6 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
-x
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center">
+<img src="https://laravel.com/assets/img/components/logo-laravel.svg">
+</p>
 
 # About Laravel-CMS
 Laravel-CMS是使用Laravel&Laravel-Admin的一款CMS系统，系统没有前端页面。
