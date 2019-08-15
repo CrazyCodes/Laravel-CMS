@@ -1,5 +1,5 @@
 <p align="center">
-<img src="logo.png">
+<img src="https://github.com/CrazyCodes/Laravel-CMS/blob/master/logo.png">
 </p>
 
 # About Laravel-CMS
