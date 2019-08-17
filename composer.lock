@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1437eba4d0fc4d8e07f50ab05e3c7dad",
+    "content-hash": "8aa6ea55dfa943d44d9ba65dfc834865",
     "packages": [
         {
             "name": "codingyu/ueditor",
@@ -59,6 +59,59 @@
                 "ueditor"
             ],
             "time": "2019-07-28T02:10:30+00:00"
+        },
+        {
+            "name": "cyd622/laravel-admin-ext-echarts",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cyd622/laravel-admin-ext-echarts.git",
+                "reference": "4311388d499a9f1c68f5c645a6e9352f36fa6e92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cyd622/laravel-admin-ext-echarts/zipball/4311388d499a9f1c68f5c645a6e9352f36fa6e92",
+                "reference": "4311388d499a9f1c68f5c645a6e9352f36fa6e92",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\Widgets\\Echarts\\EchartsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\Widgets\\Echarts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "cyd622",
+                    "email": "luffywang622@gmail.com"
+                }
+            ],
+            "description": "Use Echarts in laravel-admin",
+            "homepage": "https://github.com/cyd622/laravel-admin-ext-echarts",
+            "keywords": [
+                "echarts",
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2019-04-10T08:24:24+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -735,58 +788,6 @@
             "time": "2019-07-29T16:49:45+00:00"
         },
         {
-            "name": "ichynul/iframe-tabs",
-            "version": "1.2.25",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ichynul/iframe-tabs.git",
-                "reference": "a0c766be8e0c393b806518f259d4a79d74f119c5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ichynul/iframe-tabs/zipball/a0c766be8e0c393b806518f259d4a79d74f119c5",
-                "reference": "a0c766be8e0c393b806518f259d4a79d74f119c5",
-                "shasum": ""
-            },
-            "require": {
-                "encore/laravel-admin": "~1.6",
-                "php": ">=7.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Ichynul\\IframeTabs\\IframeTabsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ichynul\\IframeTabs\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "ichynul",
-                    "email": "ichynul@outlook.com"
-                }
-            ],
-            "description": "laravel-admin extension iframe-tabs",
-            "homepage": "https://github.com/ichynul/iframe-tabs",
-            "keywords": [
-                "extension",
-                "laravel-admin"
-            ],
-            "time": "2019-07-12T13:11:39+00:00"
-        },
-        {
             "name": "jakub-onderka/php-console-color",
             "version": "v0.2",
             "source": {
@@ -926,6 +927,218 @@
                 "laravel-admin"
             ],
             "time": "2019-08-06T04:02:18+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/chartjs",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/chartjs.git",
+                "reference": "3a12f9907c9d4ba59cdd1c9033e67325a337469f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/chartjs/zipball/3a12f9907c9d4ba59cdd1c9033e67325a337469f",
+                "reference": "3a12f9907c9d4ba59cdd1c9033e67325a337469f",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Chartjs\\ChartjsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Chartjs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Use Chartjs in laravel-admin",
+            "homepage": "https://github.com/laravel-admin-ext/chartjs",
+            "keywords": [
+                "chartjs",
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-09-16T17:28:26+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/lock-screen",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/lock-screen.git",
+                "reference": "847b40fe32c9248b18d60b015860c2530232097d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/lock-screen/zipball/847b40fe32c9248b18d60b015860c2530232097d",
+                "reference": "847b40fe32c9248b18d60b015860c2530232097d",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\LockScreen\\LockScreenServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\LockScreen\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song"
+                }
+            ],
+            "description": "description...",
+            "homepage": "https://github.com/laravel-admin-ext/lock-screen",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2018-11-14T15:28:44+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/log-viewer",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/log-viewer.git",
+                "reference": "742a2550746c9346d463249ba16b8fba9ac9cf97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/log-viewer/zipball/742a2550746c9346d463249ba16b8fba9ac9cf97",
+                "reference": "742a2550746c9346d463249ba16b8fba9ac9cf97",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\LogViewer\\LogViewerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\LogViewer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Log viewer for laravel",
+            "homepage": "https://github.com/laravel-admin-extensions/log-viewer",
+            "keywords": [
+                "Viewer",
+                "laravel-admin",
+                "log"
+            ],
+            "time": "2018-11-13T17:17:36+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/media-manager",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/media-manager.git",
+                "reference": "3545f3b88893ad4787ba89925503678b55b689c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/media-manager/zipball/3545f3b88893ad4787ba89925503678b55b689c8",
+                "reference": "3545f3b88893ad4787ba89925503678b55b689c8",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.5",
+                "laravel/framework": "~5.5",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "~5.5",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\Media\\MediaServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\Media\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Media manager for laravel",
+            "homepage": "https://github.com/laravel-admin-extensions/media-manager",
+            "keywords": [
+                "laravel-admin",
+                "manager",
+                "media"
+            ],
+            "time": "2018-09-23T06:02:37+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1300,58 +1513,6 @@
             "time": "2018-11-05T09:00:11+00:00"
         },
         {
-            "name": "mwz747512353/laravel-admin-echarts",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mwz747512353/laravelAdmin-echarts.git",
-                "reference": "013732f3f0155b7a018b93c2abd3f2d0dc1ec820"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mwz747512353/laravelAdmin-echarts/zipball/013732f3f0155b7a018b93c2abd3f2d0dc1ec820",
-                "reference": "013732f3f0155b7a018b93c2abd3f2d0dc1ec820",
-                "shasum": ""
-            },
-            "require": {
-                "encore/laravel-admin": "~1.6",
-                "php": ">=7.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Encore\\ECharts\\EChartsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Encore\\ECharts\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "WenZhen Miao"
-                }
-            ],
-            "description": "基于laravel-admin的echarts图表",
-            "homepage": "https://github.com/laravel-admin-ext/echarts",
-            "keywords": [
-                "echarts",
-                "laravel-admin",
-                "图表"
-            ],
-            "time": "2019-03-01T01:31:22+00:00"
-        },
-        {
             "name": "nesbot/carbon",
             "version": "2.22.3",
             "source": {
@@ -1529,6 +1690,65 @@
                 "serialize"
             ],
             "time": "2019-07-09T21:58:11+00:00"
+        },
+        {
+            "name": "orangehill/iseed",
+            "version": "v2.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orangehill/iseed.git",
+                "reference": "360ba1314e1dc950438bbb8006fc220de47dca00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orangehill/iseed/zipball/360ba1314e1dc950438bbb8006fc220de47dca00",
+                "reference": "360ba1314e1dc950438bbb8006fc220de47dca00",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.3.8",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/filesystem": "5.x",
+                "laravel/framework": "^5.3.8",
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Orangehill\\Iseed\\IseedServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Orangehill\\Iseed": "src/"
+                },
+                "classmap": [
+                    "src/Orangehill/Iseed/Exceptions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tihomir Opacic",
+                    "email": "tihomir.opacic@orangehilldev.com"
+                }
+            ],
+            "description": "Generate a new Laravel database seed file based on data from the existing database table.",
+            "keywords": [
+                "artisan",
+                "generators",
+                "laravel",
+                "seed"
+            ],
+            "time": "2018-12-07T08:06:29+00:00"
         },
         {
             "name": "overtrue/laravel-ueditor",
@@ -3782,6 +4002,166 @@
             "time": "2016-01-20T08:20:44+00:00"
         },
         {
+            "name": "ichynul/configx",
+            "version": "1.2.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ichynul/configx.git",
+                "reference": "4b5a7acf935415e43dce5fb9c072bdde6ef88025"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ichynul/configx/zipball/4b5a7acf935415e43dce5fb9c072bdde6ef88025",
+                "reference": "4b5a7acf935415e43dce5fb9c072bdde6ef88025",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "ichynul/row-table": "^1.1.0",
+                "laravel-admin-ext/config": "^1.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Ichynul\\Configx\\ConfigxServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ichynul\\Configx\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ichynul",
+                    "email": "ichynul@outlook.com"
+                }
+            ],
+            "description": "laravel-admin extension configx",
+            "homepage": "https://github.com/ichynul/configx",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2019-08-12T15:55:31+00:00"
+        },
+        {
+            "name": "ichynul/row-table",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ichynul/row-table.git",
+                "reference": "e7e09d1caa8e668bedd7a876842ba1b6234b791d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ichynul/row-table/zipball/e7e09d1caa8e668bedd7a876842ba1b6234b791d",
+                "reference": "e7e09d1caa8e668bedd7a876842ba1b6234b791d",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Ichynul\\RowTable\\RowTableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ichynul\\RowTable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ichynul",
+                    "email": "ichynul@outlook.com"
+                }
+            ],
+            "description": "laravel-admin extension row-table",
+            "homepage": "https://github.com/ichynul/row-table",
+            "keywords": [
+                "extension",
+                "laravel-admin"
+            ],
+            "time": "2019-06-09T10:02:50+00:00"
+        },
+        {
+            "name": "laravel-admin-ext/config",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-admin-extensions/config.git",
+                "reference": "c24d50742a0080b4f90745841387d5dd073e0878"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-admin-extensions/config/zipball/c24d50742a0080b4f90745841387d5dd073e0878",
+                "reference": "c24d50742a0080b4f90745841387d5dd073e0878",
+                "shasum": ""
+            },
+            "require": {
+                "encore/laravel-admin": "~1.6",
+                "laravel/framework": "~5.5",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "~5.5",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Encore\\Admin\\Config\\ConfigServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Encore\\Admin\\Config\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "z-song",
+                    "email": "zosong@126.com"
+                }
+            ],
+            "description": "Config extension for laravel-admin",
+            "homepage": "https://github.com/laravel-admin-extensions/config",
+            "keywords": [
+                "laravel-admin",
+                "setting"
+            ],
+            "time": "2018-12-12T04:03:36+00:00"
+        },
+        {
             "name": "mockery/mockery",
             "version": "1.2.3",
             "source": {
@@ -5275,7 +5655,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1.3"
+        "php": "^7.1.3",
+        "ext-json": "*"
     },
     "platform-dev": []
 }

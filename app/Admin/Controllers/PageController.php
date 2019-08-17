@@ -29,8 +29,7 @@
          */
         protected function grid()
         {
-            $grid    = new Grid(new Page);
-            
+            $grid = new Grid(new Page);
             $grid->expandFilter();
             $grid->disableExport();
             $grid->model()->where('site_id', session()->get('site_id'));
@@ -56,7 +55,7 @@
             $grid->column('pic_url', __('缩略图'))->image(env('APP_URL') . '/uploads', 50, 50);
             $grid->column('title', __('标题'))->editable();
             $grid->column('created_at', __('创建时间'))->sortable();
-            
+    
             return $grid;
         }
         

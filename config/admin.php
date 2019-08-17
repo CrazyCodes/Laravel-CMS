@@ -62,7 +62,7 @@
             
             'namespace' => 'App\\Admin\\Controllers',
             
-            'middleware' => ['web', 'admin'],
+            'middleware' => ['web', 'admin','admin.lock'],
         ],
         
         /*
@@ -299,7 +299,7 @@
         | This value is used to set the background image of login page.
         |
         */
-        'login_background_image'    => '',
+        'login_background_image'    => '/beautiful-autumn-leaves-autumn-red-background-sunny-daylight-horizontal.jpg',
         
         /*
         |--------------------------------------------------------------------------
@@ -359,7 +359,7 @@
         | Enable/Disable sidebar menu search
         |--------------------------------------------------------------------------
         */
-        'enable_menu_search'        => true,
+        'enable_menu_search'        => false,
         
         /*
         |--------------------------------------------------------------------------
@@ -397,7 +397,7 @@
         'extensions'                => [
             'iframe-tabs' => [
                 // Set to `false` if you want to disable this extension
-                'enable'             => true,
+                'enable'             => false,
                 // The controller and action of dashboard page `/admin/dashboard`
                 'home_action'        => App\Admin\Controllers\HomeController::class . '@index',
                 // Default page tab-title
@@ -439,6 +439,16 @@
             ],
             'breadcrumb'  => [
                 'enable' => true,
+            ],
+            'chartjs' => [
+    
+                // Set to `false` if you want to disable this extension
+                'enable' => true,
+            ],
+            'media-manager' => [
+    
+                // Select a local disk that you configured in `config/filesystem.php`
+                'disk' => 'admin'
             ],
         ],
     ];

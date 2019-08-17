@@ -1,3 +1,7 @@
+# Version
+- Laravel 5.8.*
+- laravel-admin 1.7
+
 # About Laravel-CMS
 Laravel-CMS是使用Laravel&Laravel-Admin的一款CMS系统，系统没有前端页面。
 

@@ -89,11 +89,18 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
       <path value="$PROJECT_DIR$/vendor/encore/laravel-admin" />
-      <path value="$PROJECT_DIR$/vendor/ichynul/iframe-tabs" />
       <path value="$PROJECT_DIR$/vendor/overtrue/laravel-ueditor" />
       <path value="$PROJECT_DIR$/vendor/codingyu/ueditor" />
       <path value="$PROJECT_DIR$/vendor/james.xue/laravel-admin-breadcrumb" />
-      <path value="$PROJECT_DIR$/vendor/mwz747512353/laravel-admin-echarts" />
+      <path value="$PROJECT_DIR$/vendor/orangehill/iseed" />
+      <path value="$PROJECT_DIR$/vendor/cyd622/laravel-admin-ext-echarts" />
+      <path value="$PROJECT_DIR$/vendor/laravel-admin-ext/chartjs" />
+      <path value="$PROJECT_DIR$/vendor/laravel-admin-ext/log-viewer" />
+      <path value="$PROJECT_DIR$/vendor/laravel-admin-ext/media-manager" />
+      <path value="$PROJECT_DIR$/vendor/laravel-admin-ext/lock-screen" />
+      <path value="$PROJECT_DIR$/vendor/ichynul/row-table" />
+      <path value="$PROJECT_DIR$/vendor/ichynul/configx" />
+      <path value="$PROJECT_DIR$/vendor/laravel-admin-ext/config" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
