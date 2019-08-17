@@ -37,10 +37,10 @@
                         $form->text('name', '标题')->rules('required');
                         $form->text('link_url', __('跳转链接'))->required();
                         $form->select('target', __('跳转方式'))->options([
-                            'self'=>'当前页跳转',
-                            'block'=>'新页面跳转'
+                            'self'  => '当前页跳转',
+                            'block' => '新页面跳转',
                         ])->default('self')->required();
-                        $form->switch('status',__('状态'))->states([
+                        $form->switch('status', __('状态'))->states([
                             'on'  => ['value' => 1, 'text' => '启用', 'color' => 'success'],
                             'off' => ['value' => 0, 'text' => '禁用', 'color' => 'danger'],
                         ])->default(1);
@@ -55,13 +55,17 @@
             return Navigation::tree(function (Tree $tree) {
                 $tree->branch(function ($branch) {
                     $payload = "<strong>{$branch['name']}</strong>";
-                    $uri = $branch['link_url'];
+                    $uri     = $branch['link_url'];
                     $payload .= "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"$uri\" class=\"dd-nodrag\">$uri</a>";
+                    
                     return $payload;
+                });
+                
+                $tree->query(function ($model) {
+                    return $model->where('site_id', session()->get('site_id'));
                 });
             });
         }
-        
         
         
         /**
@@ -96,21 +100,21 @@
         protected function form()
         {
             $form = new Form(new Navigation);
-    
+            
             $form->hidden('site_id')->default(session()->get('site_id'));
             $form->select('parent_id', __('父级菜单'))->options(Navigation::selectOptions());
             $form->text('name', __('名称'))->required();
             $form->text('link_url', __('跳转链接'))->required();
             $form->select('target', __('跳转方式'))->options([
-                'self'=>'当前页跳转',
-                'block'=>'新页面跳转'
+                'self'  => '当前页跳转',
+                'block' => '新页面跳转',
             ])->default('self')->required();
             $form->number('sort', __('排序'))->default(0);
-            $form->switch('status',__('状态'))->states([
+            $form->switch('status', __('状态'))->states([
                 'on'  => ['value' => '1', 'text' => '启用', 'color' => 'success'],
                 'off' => ['value' => '0', 'text' => '禁用', 'color' => 'danger'],
             ])->default(1);
-
+            
             return $form;
         }
     }

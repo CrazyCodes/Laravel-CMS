@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
+        "ext-json": "*",
         "codingyu/ueditor": "^2.0",
         "encore/laravel-admin": "^1.7",
         "fideloper/proxy": "^4.0",
@@ -17,7 +18,7 @@
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
         "mwz747512353/laravel-admin-echarts": "^1.0",
-        "ext-json": "*"
+        "orangehill/iseed": "^2.6"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

@@ -7,7 +7,10 @@
     use Encore\Admin\Controllers\AdminController;
     use Encore\Admin\Form;
     use Encore\Admin\Grid;
+    use Encore\Admin\Layout\Content;
     use Encore\Admin\Show;
+    use Illuminate\Support\Facades\Request;
+    use James\Admin\Breadcrumb\BaseController;
     
     class PageController extends AdminController
     {
@@ -18,6 +21,7 @@
          */
         protected $title = '图文列表';
         
+        
         /**
          * Make a grid builder.
          *
@@ -25,7 +29,8 @@
          */
         protected function grid()
         {
-            $grid = new Grid(new Page);
+            $grid    = new Grid(new Page);
+            
             $grid->expandFilter();
             $grid->disableExport();
             $grid->model()->where('site_id', session()->get('site_id'));

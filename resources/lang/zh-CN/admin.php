@@ -1,5 +1,4 @@
 <?php
-
 return [
     'online'                => '在线',
     'login'                 => '登录',
@@ -98,7 +97,12 @@ return [
         'filter_clear'       => '显示全部',
         'filter_placeholder' => '过滤',
     ],
-    'menu_titles' => [],
+    'grid_items_selected'    => '已选择 {n} 项',
+    'menu_titles'            => [],
+    'prev'                   => '上一步',
+    'next'                   => '下一步',
+    'quick_create'           => '快速创建',
+
     'iframe_tabs' => [
         'oprations' => '页签操作',
         'refresh_current' => '刷新当前',
