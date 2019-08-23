@@ -62,7 +62,7 @@
             $grid->actions(function ($actions) {
                 $actions->disableView();
             });
-            $grid->model()->where('site_id', session()->get('site_id'));
+            $grid->model()->where('site_id', site()->get());
             $grid->filter(function ($filter) {
                 $filter->disableIdFilter();
                 $filter->like('title', '标题');
@@ -91,7 +91,7 @@
             $form->tools(function (Form\Tools $tools) {
                 $tools->disableView();
             });
-            $form->hidden('site_id')->default(session()->get('site_id'));
+            $form->hidden('site_id')->default(site()->get());
             
             $form->text('name', __('名称'));
             $form->text('width', __('宽度'));

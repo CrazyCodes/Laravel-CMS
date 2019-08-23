@@ -28,7 +28,7 @@
                 })
                 ->title('控制台')
                 ->description('欢迎使用Laravel CMS')
-                ->row(function (Row $row){
+                ->row(function (Row $row) {
                     $row->column(12, new Box('Bar chart', view('admin.defined.chartjs')));
                 })
                 ->row(function (Row $row) {
@@ -36,7 +36,7 @@
                     $row->column(6, function (Column $column) {
                         $column->append(Dashboard::environment());
                     });
-    
+                    
                     $row->column(6, function (Column $column) {
                         $column->append(Dashboard::environment());
                     });

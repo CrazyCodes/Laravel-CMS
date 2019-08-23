@@ -71,7 +71,7 @@
                 $filter->disableIdFilter();
                 $filter->like('group_name', '群组名称');
             });
-            $grid->model()->where('site_id', session()->get('site_id'));
+            $grid->model()->where('site_id', site()->get());
             $grid->column('id', __('编码'));
             $grid->column('group_name', __('群组名称'))->editable();
             $grid->column('sort', __('排序'))->sortable()->editable();
@@ -108,7 +108,7 @@
         protected function form()
         {
             $form = new Form(new SystemConfigGroup);
-            $form->hidden('site_id')->default(session()->get('site_id'));
+            $form->hidden('site_id')->default(site()->get());
             $form->text('group_name', __('群组名称'))->required();
             $form->text('sort', __('排序'))->default(0);
             

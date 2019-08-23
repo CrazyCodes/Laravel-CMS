@@ -28,8 +28,8 @@
   <![endif]-->
 </head>
 <body class="hold-transition login-page" @if(config('admin.login_background_image'))style="background: url({{config('admin.login_background_image')}}) no-repeat;background-size: cover;"@endif>
-<div class="login-box">
-  <div class="login-logo">
+<div class="login-box" style="margin:13% auto;">
+  <div class="login-logo" >
     <a href="{{ admin_base_path('/') }}"><b>{{config('admin.name')}}</b></a>
   </div>
   <!-- /.login-logo -->
@@ -80,7 +80,9 @@
     </form>
 
   </div>
-  <!-- /.login-box-body -->
+    <div style="margin-top: 100px;width: 100%;text-align: center;">Copyright © 2019 动维科技 All Rights Reserved</div>
+
+    <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
 

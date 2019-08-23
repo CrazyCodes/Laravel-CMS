@@ -11,7 +11,7 @@
         | login page.
         |
         */
-        'name'                      => 'Laravel-CMS',
+        'name'                      => 'Laravel CMS',
         
         /*
         |--------------------------------------------------------------------------
@@ -85,7 +85,7 @@
         | Html title for all pages.
         |
         */
-        'title'                     => 'Admin',
+        'title'                     => 'Laravel CMS',
         
         /*
         |--------------------------------------------------------------------------
@@ -259,7 +259,7 @@
         | Supported: "tencent", "google", "yandex".
         |
         */
-        'map_provider'              => 'google',
+        'map_provider'              => 'tencent',
         
         /*
         |--------------------------------------------------------------------------
@@ -299,7 +299,7 @@
         | This value is used to set the background image of login page.
         |
         */
-        'login_background_image'    => '/beautiful-autumn-leaves-autumn-red-background-sunny-daylight-horizontal.jpg',
+        'login_background_image'    => '/images/login_background/frame-camera-shells-straw-hat-fruits.jpg',
         
         /*
         |--------------------------------------------------------------------------

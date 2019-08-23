@@ -12,6 +12,7 @@
         "ext-json": "*",
         "codingyu/ueditor": "^2.0",
         "cyd622/laravel-admin-ext-echarts": "^1.0",
+        "dingo/api": "^2.3",
         "encore/laravel-admin": "^1.7",
         "fideloper/proxy": "^4.0",
         "james.xue/laravel-admin-breadcrumb": "^1.2",
@@ -21,6 +22,7 @@
         "laravel-admin-ext/media-manager": "^1.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
+        "maatwebsite/excel": "^3.1",
         "orangehill/iseed": "^2.6"
     },
     "require-dev": {
@@ -45,6 +47,9 @@
         "psr-4": {
             "App\\": "app/"
         },
+        "files": [
+            "app/Helper/Functions.php"
+        ],
         "classmap": [
             "database/seeds",
             "database/factories"

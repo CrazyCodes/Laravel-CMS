@@ -57,7 +57,7 @@
                             'on'  => ['value' => 1, 'text' => '启用', 'color' => 'success'],
                             'off' => ['value' => 0, 'text' => '禁用', 'color' => 'danger'],
                         ])->default(1);
-                        $form->hidden('site_id')->default(session()->get('site_id'));
+                        $form->hidden('site_id')->default(site()->get());
                         $column->append((new Box('创建', $form)));
                     });
                 });
@@ -75,7 +75,7 @@
                 });
                 
                 $tree->query(function ($model) {
-                    return $model->where('site_id', session()->get('site_id'));
+                    return $model->where('site_id', site()->get());
                 });
             });
         }
@@ -114,7 +114,7 @@
         {
             $form = new Form(new Navigation);
             
-            $form->hidden('site_id')->default(session()->get('site_id'));
+            $form->hidden('site_id')->default(site()->get());
             $form->select('parent_id', __('父级菜单'))->options(Navigation::selectOptions());
             $form->text('name', __('名称'))->required();
             $form->text('link_url', __('跳转链接'))->required();

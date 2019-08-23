@@ -140,7 +140,7 @@
                             @inject('siteRepository','App\Admin\Repository\SiteRepository')
                             <select class="form-control select2" style="width: 100%;" id="selectSite">
                                 @foreach($siteRepository->get() as $value)
-                                    <option value="{{$value->id}}" @if(session()->get('site_id') == $value->id) selected="selected" @endif>{{$value->name}}</option>
+                                    <option value="{{$value->id}}" @if($value->status == '1') selected="selected" @endif>{{$value->name}}</option>
                                 @endforeach
                             </select>
                             <script>

@@ -23,5 +23,17 @@
         $router->resource('sites', SiteController::class);
         $router->resource('links', LinkController::class);
         $router->resource('navigations', NavigationController::class);
+        $router->resource('users', UserController::class);
+        $router->resource('users_team', UserTeamController::class);
+        $router->get('users_team/member/id/{id}', 'UserTeamController@member');
+        $router->post('users/creates', 'UserController@creates');
+        $router->resource('industries', IndustryController::class);
+        $router->resource('questionnaires', QuestionnaireController::class);
+        $router->resource('guests', GuestController::class);
+        $router->resource('exhibitors', ExhibitorController::class);
+        $router->resource('exhibitors_apply', ExhibitorApplyController::class);
+        
+        $router->get('api/industry', 'Api\IndustryController@child');
+        $router->get('api/city', 'Api\IndustryController@city');
 //        $router->any('navigations', 'NavigationController@index');
     });

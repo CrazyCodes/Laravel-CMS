@@ -12,12 +12,16 @@
     */
     
     use Illuminate\Http\Request;
-    
-    Route::get('/', function () {
-        return view('welcome');
-    });
+
+//    Route::get('/', function () {
+//        return view('welcome');
+//    });
     
     Route::post('site', function (Request $request) {
-        session()->put(['site_id' => $request->site_id]);
-        session()->save();
+        \App\Models\Site::where('id', $request->site_id)->update(
+            ['status' => '1']
+        );
+        \App\Models\Site::where('id', '!=', $request->site_id)->update(
+            ['status' => '0']
+        );
     });

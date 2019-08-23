@@ -25,6 +25,7 @@
                 foreach ($config as $option) {
                     $formData[$option->var_name] = $option['var_value'];
                 }
+
                 $form = new \Encore\Admin\Widgets\Form($formData);
                 
                 foreach ($config as $option) {
@@ -39,7 +40,7 @@
         
         private function group()
         {
-            return SystemConfigGroup::where('site_id',session()->get('site_id'))->get();
+            return SystemConfigGroup::where('site_id',site()->get())->get();
         }
         
         private function config($configId)

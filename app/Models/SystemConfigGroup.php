@@ -15,7 +15,7 @@
             $data = [];
     
             $result = self::select('id', 'group_name')
-                ->where('site_id',session()->get('site_id'))
+                ->where('site_id',site()->get())
                 ->get();
     
             foreach ($result as $value) {

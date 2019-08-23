@@ -57,7 +57,7 @@
             $grid = new Grid(new Article);
             $grid->expandFilter();
             $grid->disableExport();
-            $grid->model()->where('site_id', session()->get('site_id'));
+            $grid->model()->where('site_id', site()->get());
             $grid->filter(function ($filter) {
                 $filter->disableIdFilter();
                 
@@ -102,7 +102,7 @@
             $form->tools(function (Form\Tools $tools) {
                 $tools->disableView();
             });
-            $form->hidden('site_id')->default(session()->get('site_id'));
+            $form->hidden('site_id')->default(site()->get());
             $form->select('category_id', __('所属分类'))->options(ArticleCategory::selectShow());
             $form->text('title', __('标题'));
             $form->text('color_val', __('标题颜色'))->default('#000000');

@@ -30,7 +30,7 @@
             $grid->actions(function ($actions) {
                 $actions->disableView();
             });
-            $grid->model()->where('site_id', session()->get('site_id'));
+            $grid->model()->where('site_id', site()->get());
             $grid->filter(function ($filter) {
                 $filter->disableIdFilter();
                 
@@ -60,7 +60,7 @@
             $form->tools(function (Form\Tools $tools) {
                 $tools->disableView();
             });
-            $form->hidden('site_id')->default(session()->get('site_id'));
+            $form->hidden('site_id')->default(site()->get());
             $form->text('name', __('网站名称'))->required();
             $form->text('note', __('网站描述'));
             $form->image('pic_url', __('图片'));
